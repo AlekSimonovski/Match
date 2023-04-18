@@ -6,21 +6,21 @@ public class match {
 		Team2 team2 = new Team2();
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the name of the two teams playing each other.");
-		System.out.println("First team: (playing at home)");				//Example: Lyon.
+		System.out.println("First team: (playing at home)");				//Example: Real Madrid.
 		team1.name = input.nextLine();
-		System.out.println("Second team: (playing away from home)");				//Example: Juventus.
+		System.out.println("Second team: (playing away from home)");				//Example: Barcelona.
 		team2.name = input.nextLine();
-		System.out.println("Enter the city/venue of the first match: ");
+		System.out.println("Enter the city/venue of the first match: ");		//Santiago Bernabeu
 		team1.city = input.nextLine();
-		System.out.println("Enter the city/venue of the return match: ");
+		System.out.println("Enter the city/venue of the return match: ");		//Spotify Camp Nou
 		team2.city = input.nextLine();
-		System.out.println("Enter the amount of goals "+team1.name+" scored in the 1st leg ("+team1.city+"): ");		//Lyon 1
+		System.out.println("Enter the amount of goals "+team1.name+" scored in the 1st leg ("+team1.city+"): ");		//Real Madrid 0
 		team1.goals1 = input.nextInt();
-		System.out.println("Enter the amount of goals "+team2.name+" scored in the 1st leg ("+team1.city+"): ");		//Juventus 0
+		System.out.println("Enter the amount of goals "+team2.name+" scored in the 1st leg ("+team1.city+"): ");		//Barcelona 1
 		team2.return2 = input.nextInt();
-		System.out.println("Enter the amount of goals "+team1.name+" scored in the 2nd leg ("+team2.city+"): ");		//Lyon 1
+		System.out.println("Enter the amount of goals "+team1.name+" scored in the 2nd leg ("+team2.city+"): ");		//Real Madrid 4
 		team1.return1 = input.nextInt();
-		System.out.println("Enter the amount of goals "+team2.name+" scored in the 2nd leg ("+team2.city+"): ");		//Juventus 2
+		System.out.println("Enter the amount of goals "+team2.name+" scored in the 2nd leg ("+team2.city+"): ");		//Barcelona 0
 		team2.goals2 = input.nextInt();
 		int total_team1 = team1.goals1 + team1.return1;
 		int total_team2 = team2.goals2 + team2.return2;
