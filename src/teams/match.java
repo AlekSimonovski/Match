@@ -26,18 +26,22 @@ public class match {
 		int total_team2 = team2.goals2 + team2.return2;
 		if (total_team1 > total_team2) {
 			System.out.println(team1.name+" won the tie. The score in "+team2.city+" is: "+team2.name+" "+team2.goals2+" - "+team1.return1+" "+team1.name+" ("+total_team2+" - "+total_team1+" on aggregate.)");
+			System.out.println("The score in "+team1.city+" was: "+team1.name+" "+team1.goals1+" - "+team2.return2+" "+team2.name);
 		System.exit(0);
 		}
 		if (total_team2 > total_team1) {
 			System.out.println(team2.name+" won the tie. The score in "+team2.city+" is: "+team2.name+" "+team2.goals2+" - "+team1.return1+" "+team1.name+" ("+total_team2+" - "+total_team1+" on aggregate.)");
+			System.out.println("The score in "+team1.city+" was: "+team1.name+" "+team1.goals1+" - "+team2.return2+" "+team2.name);
 		System.exit(0);
 		}
 		if (total_team1 == total_team2 && team1.return1 > team2.return2) {		
 			System.out.println("The tie was drawn but "+team1.name+" won on away goals. The score in "+team2.city+" is: "+team2.name+" "+team2.goals2+" - "+team1.return1+" "+team1.name+"\n Away goals: "+ team1.name+" "+team1.return1+" - "+team2.return2+" "+team2.name);
+			System.out.println("The score in "+team1.city+" was: "+team1.name+" "+team1.goals1+" - "+team2.return2+" "+team2.name);
 		System.exit(0);
 		}
 		if (total_team2 == total_team1 && team1.return1 < team2.return2) {
 			System.out.println("The tie was drawn but "+team2.name+" won on away goals. The score in "+team2.city+" is: "+team2.name+" "+team2.goals2+" - "+team1.return1+" "+team1.name+"\n Away goals: "+ team2.name+" "+team2.return2+" - "+team1.return1+" "+team1.name);
+			System.out.println("The score in "+team1.city+" was: "+team1.name+" "+team1.goals1+" - "+team2.return2+" "+team2.name);
 		System.exit(0);
 		}
 		else {
